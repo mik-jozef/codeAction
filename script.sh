@@ -18,7 +18,7 @@ send_msg() {
     printf "Content-Length: %d\r\n\r\n%s" "$len" "$json"
 }
 
-# 1. Initialize the server with the dynamic root
+# 1. Initialize the server
 INIT_JSON='{"jsonrpc":"2.0","id":0,"method":"initialize","params":{"processId":'$$',"rootUri":"'"$PROJECT_ROOT"'","capabilities":{}}}'
 
 # 2. Initialized notification
@@ -35,7 +35,7 @@ CODE_ACTION_JSON='{"jsonrpc":"2.0","id":125,"method":"textDocument/codeAction","
     send_msg "$INIT_JSON"
     send_msg "$INITIALIZED_JSON"
     send_msg "$DID_OPEN_JSON"
-    sleep 3
+    sleep 3 # Wait for `fileProgress`
     send_msg "$CODE_ACTION_JSON"
     sleep 2
 } | lean --server
