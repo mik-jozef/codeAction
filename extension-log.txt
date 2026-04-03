@@ -1,0 +1,82 @@
+-- This is copied from Lean VS Code extension in the Output tab
+-- with `lean4.trace.server: "verbose"`.
+
+[Trace - 9:00:07 PM] Sending request 'textDocument/codeAction - (125)'.
+Params: {
+    "textDocument": {
+        "uri": "file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/CodeAction/Basic.lean"
+    },
+    "range": {
+        "start": {
+            "line": 3,
+            "character": 0
+        },
+        "end": {
+            "line": 3,
+            "character": 0
+        }
+    },
+    "context": {
+        "diagnostics": [],
+        "triggerKind": 2
+    }
+}
+
+
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:450:17: unknown metavariable _uniq.4
+backtrace:
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(+0xa99c3a3) [0x753e2519c3a3]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(+0xa993113) [0x753e25193113]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(lean_panic_fn+0x1c) [0x753e2519323c]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.MetavarContext.MkBinding.elimMVar [private]+0x50) [0x753e2446f4a0]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.MetavarContext.MkBinding.elimApp [private]+0x439) [0x753e24472629]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.MetavarContext.MkBinding.elimMVarDeps+0x60) [0x753e24474970]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.MetavarContext.MkBinding.mkBinding+0x5a) [0x753e2447731a]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.MetavarContext.mkBinding+0x148) [0x753e24477c48]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.Meta.mkForallFVars+0x245) [0x753e21978355]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.Meta.inferLambdaType [λ, private]+0xde) [0x753e241347fe]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.Meta.inferLambdaType [boxed, λ, private]+0x9) [0x753e24134929]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(<apply/7>+0x1dc) [0x753e251a873c]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.Meta.forallTelescope spec at Lean.Meta.inferForallType[arity↓, λ, boxed]+0xc) [0x753e241335bc]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(<apply/5>+0x86a) [0x753e251a622a]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.Meta.lambdaTelescopeImp.process [arity↓, private]+0x9d4) [0x753e2199a824]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.Meta.lambdaTelescopeImp [private]+0x85) [0x753e2199b225]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.Meta.lambdaLetTelescope spec at Lean.Meta.inferLambdaType[arity↓]+0x8e) [0x753e2413458e]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.Meta.inferTypeImp.infer [private]+0x604) [0x753e2413bd24]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(<apply/5>+0xa0c) [0x753e251a63cc]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.Elab.ContextInfo.runMetaM [λ, arity↓]+0x4a) [0x753e1ee0c1da]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(<apply/3>+0x970) [0x753e251a3180]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.Elab.ContextInfo.runCoreM [arity↓]+0x13b6) [0x753e1ee0a976]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.Elab.ContextInfo.runMetaM [arity↓]+0x18a) [0x753e1ee0c5aa]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(+0xa9882f2) [0x753e251882f2]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(+0xa9865e5) [0x753e251865e5]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(+0xa9885a6) [0x753e251885a6]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(+0xa9865e5) [0x753e251865e5]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(+0xa9885a6) [0x753e251885a6]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(+0xa9865e5) [0x753e251865e5]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(+0xa989a30) [0x753e25189a30]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(+0xa982947) [0x753e25182947]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(+0xa989697) [0x753e25189697]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(+0xa98936d) [0x753e2518936d]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(<apply/6>+0xf3d) [0x753e251a7fad]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Array.forIn'Unsafe.loop [private] spec at Lean.CodeAction.cmdCodeActionProvider+0x178) [0x753e1e2e3698]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Array.forIn'Unsafe.loop [private] spec at Lean.CodeAction.cmdCodeActionProvider+0x6ba) [0x753e1e2e498a]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.CodeAction.cmdCodeActionProvider+0x29f) [0x753e1e2e4ecf]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(<apply/4>+0x160) [0x753e251a4300]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Array.foldlMUnsafe.fold [private] spec at Lean.Server.handleCodeAction+0x17a) [0x753e1e01f15a]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.Server.handleCodeAction [λ]+0x154) [0x753e1e01f974]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(<apply/3>+0x12a2) [0x753e251a3ab2]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(<apply/3>+0x12cf) [0x753e251a3adf]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(<apply/2>+0x124c) [0x753e251a1d2c]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(Lean.Server.ServerTask.EIO.mapTaskCheap [λ, arity↓]+0xb) [0x753e1dba8b6b]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(<apply/2>+0xbc1) [0x753e251a16a1]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(+0xa9b8f6b) [0x753e251b8f6b]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(<apply/1>+0x1204) [0x753e251a02d4]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(<apply/1>+0x119f) [0x753e251a026f]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(+0xa99d958) [0x753e2519d958]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(+0xa99de67) [0x753e2519de67]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/lib/lean/libleanshared.so(+0xa991155) [0x753e25191155]
+/lib/x86_64-linux-gnu/libc.so.6(+0x9caa4) [0x753e1a49caa4]
+/lib/x86_64-linux-gnu/libc.so.6(+0x129c6c) [0x753e1a529c6c]
+[Trace - 9:00:07 PM] Received response 'textDocument/codeAction - (125)' in 53ms.
+Result: []

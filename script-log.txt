@@ -1,0 +1,175 @@
+
+[CLIENT -> SERVER] Sending:
+{
+  "jsonrpc": "2.0",
+  "id": 0,
+  "method": "initialize",
+  "params": {
+    "processId": 931556,
+    "rootUri": "file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction",
+    "capabilities": {}
+  }
+}
+
+[CLIENT -> SERVER] Sending:
+{
+  "jsonrpc": "2.0",
+  "method": "initialized",
+  "params": {}
+}
+
+[CLIENT -> SERVER] Sending:
+{
+  "jsonrpc": "2.0",
+  "method": "textDocument/didOpen",
+  "params": {
+    "textDocument": {
+      "uri": "file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/Basic.lean",
+      "languageId": "lean4",
+      "version": 1,
+      "text": "import Batteries.CodeAction.Match\n\ndef baz: Nat → _\n| a => sorry"
+    }
+  }
+}
+Content-Length: 1519
+
+{"id":0,"jsonrpc":"2.0","result":{"capabilities":{"callHierarchyProvider":true,"codeActionProvider":{"codeActionKinds":["quickfix","refactor","source.organizeImports"],"resolveProvider":true,"workDoneProgress":false},"colorProvider":{"workDoneProgress":false},"completionProvider":{"resolveProvider":true,"triggerCharacters":["."]},"declarationProvider":true,"definitionProvider":true,"documentHighlightProvider":true,"documentSymbolProvider":true,"experimental":{"moduleHierarchyProvider":{},"rpcProvider":{"highlightMatchesProvider":{}}},"foldingRangeProvider":true,"hoverProvider":true,"inlayHintProvider":{"resolveProvider":false,"workDoneProgress":false},"referencesProvider":true,"renameProvider":{"prepareProvider":true},"semanticTokensProvider":{"full":true,"legend":{"tokenModifiers":["declaration","definition","readonly","static","deprecated","abstract","async","modification","documentation","defaultLibrary"],"tokenTypes":["keyword","variable","property","function","namespace","type","class","enum","interface","struct","typeParameter","parameter","enumMember","event","method","macro","modifier","comment","string","number","regexp","operator","decorator","leanSorryLike"]},"range":true},"signatureHelpProvider":{"triggerCharacters":[" "],"workDoneProgress":false},"textDocumentSync":{"change":2,"openClose":true,"save":{"includeText":true},"willSave":false,"willSaveWaitUntil":false},"typeDefinitionProvider":true,"workspaceSymbolProvider":true},"serverInfo":{"name":"Lean 4 Server","version":"0.3.0"}}}Content-Length: 267
+
+{"id":"register_lean_watcher","jsonrpc":"2.0","method":"client/registerCapability","params":{"registrations":[{"id":"lean_watcher","method":"workspace/didChangeWatchedFiles","registerOptions":{"watchers":[{"globPattern":"**/*.lean"},{"globPattern":"**/*.ilean"}]}}]}}Content-Length: 264
+
+{"jsonrpc":"2.0","method":"$/lean/fileProgress","params":{"processing":[{"kind":1,"range":{"end":{"character":12,"line":3},"start":{"character":0,"line":0}}}],"textDocument":{"uri":"file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/Basic.lean","version":1}}}Content-Length: 264
+
+{"jsonrpc":"2.0","method":"$/lean/fileProgress","params":{"processing":[{"kind":1,"range":{"end":{"character":12,"line":3},"start":{"character":0,"line":0}}}],"textDocument":{"uri":"file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/Basic.lean","version":1}}}Content-Length: 175
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/Basic.lean","version":1}}Content-Length: 63
+
+{"id":0,"jsonrpc":"2.0","method":"workspace/inlayHint/refresh"}Content-Length: 175
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/Basic.lean","version":1}}Content-Length: 264
+
+{"jsonrpc":"2.0","method":"$/lean/fileProgress","params":{"processing":[{"kind":1,"range":{"end":{"character":12,"line":3},"start":{"character":0,"line":2}}}],"textDocument":{"uri":"file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/Basic.lean","version":1}}}Content-Length: 701
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[{"fullRange":{"end":{"character":16,"line":2},"start":{"character":15,"line":2}},"message":"don't know how to synthesize placeholder\ncontext:\n⊢ Sort ?u.3\n\nNote: Because this declaration's type has been explicitly provided, all parameter types and holes (e.g., `_`) in its header are resolved before its body is processed; information from the declaration body cannot be used to infer what these values should be","range":{"end":{"character":16,"line":2},"start":{"character":15,"line":2}},"severity":1,"source":"Lean 4"}],"uri":"file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/Basic.lean","version":1}}Content-Length: 349
+
+{"jsonrpc":"2.0","method":"$/lean/fileProgress","params":{"processing":[{"kind":1,"range":{"end":{"character":0,"line":2},"start":{"character":0,"line":2}}},{"kind":1,"range":{"end":{"character":12,"line":3},"start":{"character":0,"line":3}}}],"textDocument":{"uri":"file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/Basic.lean","version":1}}}Content-Length: 350
+
+{"jsonrpc":"2.0","method":"$/lean/fileProgress","params":{"processing":[{"kind":1,"range":{"end":{"character":0,"line":2},"start":{"character":0,"line":2}}},{"kind":1,"range":{"end":{"character":12,"line":3},"start":{"character":12,"line":3}}}],"textDocument":{"uri":"file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/Basic.lean","version":1}}}Content-Length: 350
+
+{"jsonrpc":"2.0","method":"$/lean/fileProgress","params":{"processing":[{"kind":1,"range":{"end":{"character":0,"line":2},"start":{"character":0,"line":2}}},{"kind":1,"range":{"end":{"character":12,"line":3},"start":{"character":12,"line":3}}}],"textDocument":{"uri":"file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/Basic.lean","version":1}}}Content-Length: 350
+
+{"jsonrpc":"2.0","method":"$/lean/fileProgress","params":{"processing":[{"kind":1,"range":{"end":{"character":0,"line":2},"start":{"character":0,"line":2}}},{"kind":1,"range":{"end":{"character":12,"line":3},"start":{"character":12,"line":3}}}],"textDocument":{"uri":"file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/Basic.lean","version":1}}}Content-Length: 350
+
+{"jsonrpc":"2.0","method":"$/lean/fileProgress","params":{"processing":[{"kind":1,"range":{"end":{"character":0,"line":2},"start":{"character":0,"line":2}}},{"kind":1,"range":{"end":{"character":12,"line":3},"start":{"character":12,"line":3}}}],"textDocument":{"uri":"file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/Basic.lean","version":1}}}Content-Length: 350
+
+{"jsonrpc":"2.0","method":"$/lean/fileProgress","params":{"processing":[{"kind":1,"range":{"end":{"character":0,"line":2},"start":{"character":0,"line":2}}},{"kind":1,"range":{"end":{"character":12,"line":3},"start":{"character":12,"line":3}}}],"textDocument":{"uri":"file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/Basic.lean","version":1}}}Content-Length: 265
+
+{"jsonrpc":"2.0","method":"$/lean/fileProgress","params":{"processing":[{"kind":1,"range":{"end":{"character":12,"line":3},"start":{"character":12,"line":3}}}],"textDocument":{"uri":"file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/Basic.lean","version":1}}}Content-Length: 179
+
+{"jsonrpc":"2.0","method":"$/lean/fileProgress","params":{"processing":[],"textDocument":{"uri":"file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/Basic.lean","version":1}}}Content-Length: 179
+
+{"jsonrpc":"2.0","method":"$/lean/fileProgress","params":{"processing":[],"textDocument":{"uri":"file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/Basic.lean","version":1}}}Content-Length: 63
+
+{"id":1,"jsonrpc":"2.0","method":"workspace/inlayHint/refresh"}Content-Length: 63
+
+{"id":2,"jsonrpc":"2.0","method":"workspace/inlayHint/refresh"}Content-Length: 68
+
+{"id":3,"jsonrpc":"2.0","method":"workspace/semanticTokens/refresh"}Content-Length: 63
+
+{"id":4,"jsonrpc":"2.0","method":"workspace/inlayHint/refresh"}Content-Length: 63
+
+{"id":5,"jsonrpc":"2.0","method":"workspace/inlayHint/refresh"}
+[CLIENT -> SERVER] Sending:
+{
+  "jsonrpc": "2.0",
+  "id": 125,
+  "method": "textDocument/codeAction",
+  "params": {
+    "textDocument": {
+      "uri": "file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/Basic.lean"
+    },
+    "range": {
+      "start": {
+        "line": 3,
+        "character": 0
+      },
+      "end": {
+        "line": 3,
+        "character": 0
+      }
+    },
+    "context": {
+      "diagnostics": [],
+      "triggerKind": 2
+    }
+  }
+}
+PANIC at Lean.MetavarContext.getDecl Lean.MetavarContext:450:17: unknown metavariable _uniq.4
+backtrace:
+Content-Length: 63
+
+{"id":6,"jsonrpc":"2.0","method":"workspace/inlayHint/refresh"}/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(+0xa99c3a3) [0x74e64fd9c3a3]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(+0xa993113) [0x74e64fd93113]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(lean_panic_fn+0x1c) [0x74e64fd9323c]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.MetavarContext.MkBinding.elimMVar [private]+0x50) [0x74e64f06f4a0]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.MetavarContext.MkBinding.elimApp [private]+0x439) [0x74e64f072629]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.MetavarContext.MkBinding.elimMVarDeps+0x60) [0x74e64f074970]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.MetavarContext.MkBinding.mkBinding+0x5a) [0x74e64f07731a]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.MetavarContext.mkBinding+0x148) [0x74e64f077c48]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.Meta.mkForallFVars+0x245) [0x74e64c578355]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.Meta.inferLambdaType [λ, private]+0xde) [0x74e64ed347fe]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.Meta.inferLambdaType [boxed, λ, private]+0x9) [0x74e64ed34929]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(<apply/7>+0x1dc) [0x74e64fda873c]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.Meta.forallTelescope spec at Lean.Meta.inferForallType[arity↓, λ, boxed]+0xc) [0x74e64ed335bc]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(<apply/5>+0x86a) [0x74e64fda622a]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.Meta.lambdaTelescopeImp.process [arity↓, private]+0x9d4) [0x74e64c59a824]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.Meta.lambdaTelescopeImp [private]+0x85) [0x74e64c59b225]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.Meta.lambdaLetTelescope spec at Lean.Meta.inferLambdaType[arity↓]+0x8e) [0x74e64ed3458e]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.Meta.inferTypeImp.infer [private]+0x604) [0x74e64ed3bd24]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(<apply/5>+0xa0c) [0x74e64fda63cc]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.Elab.ContextInfo.runMetaM [λ, arity↓]+0x4a) [0x74e649a0c1da]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(<apply/3>+0x970) [0x74e64fda3180]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.Elab.ContextInfo.runCoreM [arity↓]+0x13b6) [0x74e649a0a976]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.Elab.ContextInfo.runMetaM [arity↓]+0x18a) [0x74e649a0c5aa]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(+0xa9882f2) [0x74e64fd882f2]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(+0xa9865e5) [0x74e64fd865e5]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(+0xa9885a6) [0x74e64fd885a6]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(+0xa9865e5) [0x74e64fd865e5]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(+0xa9885a6) [0x74e64fd885a6]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(+0xa9865e5) [0x74e64fd865e5]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(+0xa989a30) [0x74e64fd89a30]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(+0xa982947) [0x74e64fd82947]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(+0xa989697) [0x74e64fd89697]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(+0xa98936d) [0x74e64fd8936d]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(<apply/6>+0xf3d) [0x74e64fda7fad]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Array.forIn'Unsafe.loop [private] spec at Lean.CodeAction.cmdCodeActionProvider+0x178) [0x74e648ee3698]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Array.forIn'Unsafe.loop [private] spec at Lean.CodeAction.cmdCodeActionProvider+0x6ba) [0x74e648ee498a]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.CodeAction.cmdCodeActionProvider+0x29f) [0x74e648ee4ecf]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(<apply/4>+0x160) [0x74e64fda4300]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Array.foldlMUnsafe.fold [private] spec at Lean.Server.handleCodeAction+0x17a) [0x74e648c1f15a]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.Server.handleCodeAction [λ]+0x154) [0x74e648c1f974]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(<apply/3>+0x12a2) [0x74e64fda3ab2]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(<apply/3>+0x12cf) [0x74e64fda3adf]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(<apply/2>+0x124c) [0x74e64fda1d2c]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(Lean.Server.ServerTask.EIO.mapTaskCheap [λ, arity↓]+0xb) [0x74e6487a8b6b]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(<apply/2>+0xbc1) [0x74e64fda16a1]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(+0xa9b8f6b) [0x74e64fdb8f6b]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(<apply/1>+0x1204) [0x74e64fda02d4]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(<apply/1>+0x119f) [0x74e64fda026f]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(+0xa99d958) [0x74e64fd9d958]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(+0xa99de67) [0x74e64fd9de67]
+/home/mik-jozef/.elan/toolchains/leanprover--lean4---v4.29.0/bin/../lib/lean/libleanshared.so(+0xa991155) [0x74e64fd91155]
+/lib/x86_64-linux-gnu/libc.so.6(+0x9caa4) [0x74e64509caa4]
+/lib/x86_64-linux-gnu/libc.so.6(+0x129c6c) [0x74e645129c6c]
+Content-Length: 38
+
+{"id":125,"jsonrpc":"2.0","result":[]}Content-Length: 63
+
+{"id":7,"jsonrpc":"2.0","method":"workspace/inlayHint/refresh"}Content-Length: 68
+
+{"id":8,"jsonrpc":"2.0","method":"workspace/semanticTokens/refresh"}Content-Length: 63
+
+{"id":9,"jsonrpc":"2.0","method":"workspace/inlayHint/refresh"}Content-Length: 64
+
+{"id":10,"jsonrpc":"2.0","method":"workspace/inlayHint/refresh"}Content-Length: 175
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///home/mik-jozef/Desktop/git/mik-jozef/codeAction/Basic.lean","version":1}}Watchdog error: Cannot read LSP message: Stream was closed
